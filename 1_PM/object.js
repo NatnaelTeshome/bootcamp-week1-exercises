@@ -8,8 +8,26 @@ const assert = require('assert')
  * HINT 2: Get the truthiness of a value by using a double bang (!!),
  *    or the untruthiness using a single bang (!)
  */
+function isObject(obj){
+  if(typeof obj === 'object' && obj !== null && !Array.isArray(obj)){
+      return true;
+  }
+  return false;
+}
 
 const hasFalsyValue = obj => {
+  for (let property in obj){
+    if (isObject(obj[property])){
+      return hasFalsyValue(obj[property])
+    }
+    else if (obj[property]){
+      continue;
+    }
+    else if (!obj[property]){
+      return true;
+    }
+  }
+  return false;
 };
 
 const falsyObj = {
@@ -32,6 +50,7 @@ const truthyObj = {
     anotherTruthy: ";)"
   }
 };
+
 
 assert(hasFalsyValue(falsyObj) === true);
 assert(hasFalsyValue(truthyObj) === false);

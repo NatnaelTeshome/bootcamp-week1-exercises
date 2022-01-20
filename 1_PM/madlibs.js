@@ -11,8 +11,12 @@ const verb1 = ______
 Change thses values to generate a different story
 */
 
+const sportName = 'soccer';
+const foodName = 'crispy chicken';
+const typeOfMovie = 'adventure';
+
 const story = `
-**replace this with your story using a template string**
+This winter is so cold. I want to play ${sportName}. I also enjoy eating ${foodName}. Besides, I like watching ${typeOfMovie} movies. 
 `
 
 console.log(story)
