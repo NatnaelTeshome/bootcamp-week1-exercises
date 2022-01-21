@@ -1,12 +1,15 @@
 * {
   margin: 0px;
-  font-family: clarendon;
+  font-family: Comic Sans MS, Comic Sans, cursive;
   font-size: 18px;
 }
 
 body {
    box-sizing: border-box; 
-   background: #607d85;
+   background-image: url('/todoback.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
 }
 
 body *, body *:before, body *:after { 

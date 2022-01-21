@@ -1,0 +1,234 @@
+/* Margin for the entire html element */
+html {
+    margin: auto;
+  }
+  
+body {
+    background-image: url(homepage.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family : cursive;
+}
+
+  
+nav {
+    background-color: crimson;
+    display: flex;
+    justify-content: space-around;
+    height:7vh;
+  }
+  
+nav ul {
+    width: 55%;
+    list-style: none;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  a:hover {
+    background-color: whitesmoke;
+    color: gray;
+    font-size: 15px;
+    font-family: serif;
+    text-decoration: none;
+  }
+
+  .fab {
+    font-size: 100px;
+  }
+  
+  .fa-envelope-square {
+    color:red;
+    font-size: 50px;
+    margin: 10px 20px;
+  }
+  
+  .fa-google {
+    color: blue;
+  }
+  
+  .fa-facebook {
+    color: blue;
+  }
+  
+  .fa-instagram {
+    color: red;
+  }
+  
+.section-4 li {
+    list-style: none;
+    font-size: 25px;
+    color: whitesmoke;
+    margin: 30px;
+}
+  
+img {
+    width: 380px;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+    padding: 10px;
+}
+
+.image-container {
+    display: flex;
+    min-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 1s;
+    width: 390px;
+    height: 360px;
+    padding: 0px
+}
+
+
+  
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+  .content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 900px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    background-color: crimson;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 20px;
+    font-size: 25px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 3px solid crimson;
+  }
+  
+  *{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 100%;
+    height: 600px;
+    padding: 40px 60px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.section-1{
+      height: 100vh;
+      background-image: url(./pictures/remyback2.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+}
+
+.section-2{
+    background: crimson;
+}
+
+.section-3{
+    background-image: url(./pictures/remyback1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-4{
+    background: #009600;
+}
+
+.box p{
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.box h1{
+    font-size: 50px;
+    text-shadow:  0px 0px 5px #000;
+}
+
+.contact-container {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 40vh 40vh;
+    grid-auto-rows: 37vh;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+  }
+  
+  #contact-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    border-radius: 10%;
+  }
+
+  .comment-container {
+    padding: 3px;
+    padding: 10px;
+  }
+  
+
+  @media screen and (max-width: 500px) {
+    img {
+      width: 160px;
+      height: 180px;
+    } 
+  
+    p {
+      font-size:13 px;
+    }
+  
+    .contact-container {
+      grid-template-columns: 30vh 30vh;
+    }
+  
+    h3 {
+      font-size: 13px;
+    }
+  }

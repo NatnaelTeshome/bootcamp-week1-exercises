@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>      
+        <!-- Importing font-awesome to include different icons -->  
+        <script src="https://kit.fontawesome.com/7880dfed2b.js" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <!-- Ensuring mobile compatibility -->
+        <meta name="viewport" content="inital-scale= 1, width= device-width">
+        <title>Contact</title>
+        <script>
+          document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('form').addEventListener('submit', function(e){
+              alert('Your message has been sent. Thank You!')
+              e.preventDefault();
+            })
+          })
+        </script>
+    </head>
+    <body>
+      <!-- Custom made navigation bar -->
+      <nav>
+        <ul>
+            <li>
+              <a href="home.html" >HOME</a>
+            </li>
+            <li>
+              <a href="images.html">PICTURES</a>
+            </li>
+            <li>
+              <a href="places.html">PLACES</a>
+            </li>
+            <li>
+              <a href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+      </nav>
+        <div class= "contact-container">
+          <div id = "contact-1">
+            <i class="fas fa-envelope-square custom-size"></i>
+              <form>
+                <div class = "container">
+                  <label for="email">Your name </label><br>
+                  <input type="text" id="email" name="email"><br>
+                </div>
+                <div class= "container comment-container">
+                    <label for="comment">Message</label>
+                    <textarea id="comment" name="comment" rows="2" cols="20"></textarea>
+                    <input type= "submit">
+                </div>
+              </form>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/remythehumanitiescat/">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/remy.the.harvard.cat/">
+              <i class="fab fa-instagram"></i> 
+            </a>
+          </div>
+      </div>
+    </body>
+</html>
